@@ -98,7 +98,6 @@ console.log(typeof population);
 */
 
 
-
 /*
 // let, const and var
 let age = 30;
@@ -114,10 +113,80 @@ job = "Teacher";
 
 lastName = "Moxley";
 console.log(lastName);
+
+language = 'Japanese';
+const country = 'Japan';
+const continent = 'Asia'
+const isIland = false;
+isIland = true;
 */
 
+/*
+// Basic Operators
 
+// Math Operators
+const now = 2037
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
 
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 
+const firstName = 'Jonas';
+const lastName = 'Blue';
+console.log(firstName + ' ' + lastName);
 
+// Assigment Operators
+let x = 10 + 5; //15
+x += 10 // x = x + 10
+x *= 4;
+x++
+console.log(x)
 
+// Comparison Operator
+console.log(ageJonas < ageSarah);
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
+*/
+
+/*
+// Operator Precedence
+
+const now = 2037
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+console.log(25 - 10 - 5); // Left to right
+
+let x, y;
+x = y = 25 - 10 - 5; // Right to left
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah);
+console.log(averageAge);
+*/
+
+/*
+// Coding Challenge 1
+// Write your code below. Good luck! 🙂
+
+const massMark = 78;
+const heightMark = 1.69;
+
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * 2);
+const BMIJohn = massJohn / (heightJohn * 2);
+
+console.log(BMIMark, BMIJohn);
+
+const markHeigherBMI = BMIMark > BMIJohn;
+console.log(markHeigherBMI)
+*/
