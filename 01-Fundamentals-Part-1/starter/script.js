@@ -190,3 +190,57 @@ console.log(BMIMark, BMIJohn);
 const markHeigherBMI = BMIMark > BMIJohn;
 console.log(markHeigherBMI)
 */
+
+
+/*
+// String, Template Literals
+
+const firstName = 'Jonas';
+const job = 'Teacher';
+const birthYear = 2000;
+const year = 2024;
+
+const jonas = "I'm " + firstName + ', a ' + (year-birthYear) + ' year old ' + job + '!';
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year-birthYear} year old ${job}!`;
+console.log(jonasNew)
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines \n\
+');
+
+console.log(`String
+with
+multiple
+lines`);
+*/
+
+
+/*
+// If-else
+
+const age = 15;
+// const isOldEnough = age >= 18;
+
+if(age >= 18) {
+    console.log('Sarah can start driving');
+} 
+else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young, wait another ${yearsLeft} years`);
+}
+
+const birthYear = 2009;
+
+let century;
+if(birthYear <= 2000){
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
