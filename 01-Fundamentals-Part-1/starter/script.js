@@ -28,17 +28,6 @@ let job1 = "programmer";
 let job2 = "teacher";
 
 console.log(myFirstJob);
-
-// Values and Variables
-
-let country = "Japan";
-console.log(country);
-
-let continent = "Asia";
-console.log(continent);
-
-let population = 12000000;
-console.log(population);
 */
 
 /*
@@ -83,18 +72,6 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null); //Type of null is a object
-
-let isIland = false;
-console.log(typeof isIland);
-
-let language
-console.log(typeof language);
-
-let country = "Japan";
-console.log(typeof country);
-
-let population = 12000000;
-console.log(typeof population);
 */
 
 
@@ -113,12 +90,6 @@ job = "Teacher";
 
 lastName = "Moxley";
 console.log(lastName);
-
-language = 'Japanese';
-const country = 'Japan';
-const continent = 'Asia'
-const isIland = false;
-isIland = true;
 */
 
 /*
@@ -173,26 +144,6 @@ console.log(averageAge);
 */
 
 /*
-// Coding Challenge 1
-// Write your code below. Good luck! 🙂
-
-const massMark = 78;
-const heightMark = 1.69;
-
-const massJohn = 92;
-const heightJohn = 1.95;
-
-const BMIMark = massMark / (heightMark * 2);
-const BMIJohn = massJohn / (heightJohn * 2);
-
-console.log(BMIMark, BMIJohn);
-
-const markHeigherBMI = BMIMark > BMIJohn;
-console.log(markHeigherBMI)
-*/
-
-
-/*
 // String, Template Literals
 
 const firstName = 'Jonas';
@@ -243,4 +194,119 @@ if(birthYear <= 2000){
     century = 21;
 }
 console.log(century);
+*/
+
+/*
+// Type Conversion and Coercion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 1000);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+console.log('I am ' + 23 + ' years old'); // Conercion
+// console.log('I am ' + '23' + ' years old');
+
+console.log('23' - '10' - 3); // - will do String to Number
+console.log('23' + '10' + 3); // + will do Number to String
+console.log('23' * '2'); // * will do String to number
+console.log('23' / '2'); // / will do String to number
+
+let n = '1' + 1; // '1' + 1 = 11
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + '5'); // '95'
+console.log('10' - '4' - '3' - 2 + '5'); // '15'
+*/
+
+
+/*
+// Assignments
+
+// Values and Variables
+let country = "Japan";
+console.log(country);
+
+let continent = "Asia";
+console.log(continent);
+
+let population = 10;
+console.log(population);
+
+// Data Types
+let isIland = false;
+console.log(typeof isIland);
+
+let language
+console.log(typeof language);
+
+console.log(typeof country);
+
+console.log(typeof population);
+
+// Let, const, var
+language = 'Japanese';
+isIland = true;
+
+// Basic Operators
+const halfCountryPopulation = population / 2;
+console.log(halfCountryPopulation);
+console.log(population + 1)
+
+console.log(6 < population);
+
+const avgCountry = 33;
+console.log(avgCountry > population);
+
+const description = country + ' is in ' + continent + ', and its ' + population + ' million people speaks ' + language;
+console.log(description);
+
+//Strings and template literals
+const descriptionNew = `${country} is in ${continent}, and its ${population} million people speaks ${language}`;
+console.log(descriptionNew)
+
+//If-else statements
+if(population > 33){
+    console.log(`${country}'s population is ${population-33} million below average`)
+}
+
+// Type Conversion and Coercion
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+*/
+
+// Challenges
+
+/*
+// Coding Challenge 1
+// Write your code below. Good luck! 🙂
+
+const massMark = 78;
+const heightMark = 1.69;
+
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * 2);
+const BMIJohn = massJohn / (heightJohn * 2);
+
+console.log(BMIMark, BMIJohn);
+
+const markHeigherBMI = BMIMark > BMIJohn;
+console.log(markHeigherBMI)
+
+// Coding Challenge 2
+// Write your code below. Good luck! 🙂
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`);
+} else {
+    console.log(`Johns's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`);
+}
 */
