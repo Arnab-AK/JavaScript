@@ -223,6 +223,54 @@ console.log(2 + 3 + 4 + '5'); // '95'
 console.log('10' - '4' - '3' - 2 + '5'); // '15'
 */
 
+/*
+// Truthy and Falsy Values - 5 falsy values - 0. '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log('Get a job');
+}
+
+let height = 0;
+if (height) {
+    console.log('Yay, height is defined');
+} else {
+    console.log('Height is undefined');
+}
+*/
+
+// Equality Operators: == vs. ===
+const age = '18';
+
+if (age === 18) console.log("You just became an adult strict"); // === means strict equal
+if (age == 18) console.log("You just became an adult loose"); // == means loose equal
+
+const favorite = Number(prompt("What is your favorite number ?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) { // '23' == 23, 23 === 23
+    console.log("Cool, 23 is a amazing number");
+} else if (favorite === 7) {
+    console.log("Cool, 7 is also a amazing number");
+} else if (favorite === 10) {
+    console.log("Cool, 10 is also a amazing number");
+} else {
+    console.log("Number is not 23 or 7");
+}
+
+if(favorite !== 23) { // !== means strict, != means loose
+    console.log("Why not 23");
+}
+
+
 
 /*
 // Assignments
