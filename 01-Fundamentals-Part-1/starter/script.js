@@ -246,6 +246,8 @@ if (height) {
 }
 */
 
+
+/*
 // Equality Operators: == vs. ===
 const age = '18';
 
@@ -269,7 +271,7 @@ if (favorite === 23) { // '23' == 23, 23 === 23
 if(favorite !== 23) { // !== means strict, != means loose
     console.log("Why not 23");
 }
-
+*/
 
 
 /*
