@@ -273,6 +273,34 @@ if(favorite !== 23) { // !== means strict, != means loose
 }
 */
 
+/*
+// Logical Operators
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if(shouldDrive) {
+//     console.log('Sarah can drive');
+// } else {
+//     console.log('Sarah cannot drive');
+// }
+
+const isTired = false; //C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+if(shouldDrive) {
+    console.log('Sarah can drive');
+} else {
+    console.log('Sarah cannot drive');
+}
+*/
 
 /*
 // Assignments
