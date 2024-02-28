@@ -303,6 +303,49 @@ if(shouldDrive) {
 */
 
 /*
+// The switch Statement
+const day = 'monday';
+
+switch(day) {
+    case 'monday': // day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break
+    case 'friday':
+        console.log('Record videos');
+        break
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break
+    default:
+        console.log('Not a valid day');
+}   
+
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend');
+} else {
+    console.log('Not a valid day');
+}
+*/
+
+/*
 // Assignments
 
 // Values and Variables
@@ -397,5 +440,20 @@ if (BMIMark > BMIJohn) {
     console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`);
 } else {
     console.log(`Johns's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`);
+}
+
+// Coding Challenge 3
+// Write your code below. Good luck! 🙂
+const scoreDolphins = (96 + 108 + 89)/3;
+const socreKoalas = (88 + 91 + 110)/3;
+
+if (scoreDolphins > socreKoalas && scoreDolphins >= 100) {
+    console.log('Dolphins win the trophy');
+} else if (socreKoalas > scoreDolphins && socreKoalas >= 100) {
+    console.log('Koalas win the trophy');
+} else if (scoreDolphins === socreKoalas && scoreDolphins >= 100 && socreKoalas >= 100) {
+    console.log('Both win the trophy');
+} else {
+    console.log('No one wins the trophy');
 }
 */
