@@ -93,3 +93,66 @@ function fruitProcessor (appels, oranges) {
 
 console.log(fruitProcessor(2, 3));
 */
+
+/*
+// Reviewing Functions
+const calcAge = function(birthYear) {
+    return 2037 - birthYear
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirementAge = 65 - age;
+
+    if (retirementAge > 0) {
+        console.log(`${firstName} retires in ${retirementAge} years`);
+        return retirementAge;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+
+    // return retirementAge;
+    // return `${firstName} retires in ${retirementAge} years`
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1970, 'Mike'));
+*/
+
+
+
+/*
+// Challenges
+
+// Coding Challenge 1
+// Write your code below. Good luck! 🙂
+const calcAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3) / 3;
+}
+
+const score1Dolphins = 85;
+const score2Dolphins = 90;
+const score3Dolphins = 88;
+
+const score1Koalas = 89;
+const score2Koalas = 85;
+const score3Koalas = 92;
+
+const scoreDolphins = calcAverage(score1Dolphins, score2Dolphins, score3Dolphins);
+const scoreKoalas = calcAverage(score1Koalas, score2Koalas, score3Koalas);
+
+checkWinner(scoreDolphins, scoreKoalas);
+
+function checkWinner(scoreDolphins, scoreKoalas) {
+    if (scoreDolphins > 2 * scoreKoalas) {
+        console.log('Dolphins');
+    } else if (scoreKoalas > 2 * scoreDolphins) {
+        console.log('Koalas');
+    } else {
+        console.log('No team wins...');
+    }
+}
+*/
+
+
