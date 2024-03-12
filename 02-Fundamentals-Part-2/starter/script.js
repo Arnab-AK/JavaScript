@@ -120,6 +120,80 @@ console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1970, 'Mike'));
 */
 
+/*
+// Introduction To Arrays
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+// friends = ['Bob', 'Alice'];
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+const yearsNew = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(yearsNew[0]);
+const age2 = calcAge(yearsNew[1]);
+const age3 = calcAge(yearsNew[yearsNew.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [calcAge(yearsNew[0]), calcAge(yearsNew[1]), calcAge(yearsNew[yearsNew.length - 1])];
+console.log(ages);
+*/
+
+/*
+// Basic Array Operations (Methods)
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add Element
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John');
+console.log(friends);
+
+// Remove Element
+friends.pop();
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+    console.log('You have a friend called Steven');
+}
+*/
 
 
 /*
