@@ -195,6 +195,25 @@ if (friends.includes('Steven')) {
 }
 */
 
+/*
+// Introduction to Objects
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+
+];
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+*/
 
 /*
 // Challenges
@@ -227,6 +246,18 @@ function checkWinner(scoreDolphins, scoreKoalas) {
         console.log('No team wins...');
     }
 }
+
+// Coding Challenge 2
+// Write your code below. Good luck! 🙂
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const totals = [bills[0] + tips [0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips)
 */
 
 
