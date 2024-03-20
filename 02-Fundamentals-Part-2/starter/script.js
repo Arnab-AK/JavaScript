@@ -298,6 +298,24 @@ console.log(jonas.age);
 console.log(jonas.getSummery());
 */
 
+/*
+// Iteration: The for Loop
+// console.log('Lifting weight repetition 1');
+// console.log('Lifting weight repetition 2');
+// console.log('Lifting weight repetition 3');
+// console.log('Lifting weight repetition 4');
+// console.log('Lifting weight repetition 5');
+// console.log('Lifting weight repetition 6');
+// console.log('Lifting weight repetition 7');
+// console.log('Lifting weight repetition 8');
+// console.log('Lifting weight repetition 9');
+// console.log('Lifting weight repetition 10');
+
+// For loops keeps running while condition is true
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weight repetition ${rep}`);
+}
+*/
 
 /*
 // Challenges
@@ -342,6 +360,36 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 // const totals = [bills[0] + tips [0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips)
+
+// Coding Challenge 3
+// Write your code below. Good luck! 🙂
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height*this.height)
+        return this.bmi;
+    }
+}
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height*this.height)
+        return this.bmi;
+    }   
+}
+
+console.log(mark.calcBMI(), john.calcBMI())
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`)
+} else {
+    console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)
+}
 */
 
 
