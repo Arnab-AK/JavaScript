@@ -393,6 +393,29 @@ for (let exercise = 1; exercise < 4; exercise++) {
 */
 
 /*
+// The While Loop
+for (let rep = 1; rep <= 2; rep++) {
+    console.log(`Lifting weight repetition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 2) {
+    console.log(`WHILE: Lifting weight repetition ${rep}`);
+    rep++
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You roller a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
+}
+*/
+
+
+/*
 // Challenges
 
 // Coding Challenge 1
@@ -465,6 +488,36 @@ if (mark.bmi > john.bmi) {
 } else {
     console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`)
 }
+
+// Coding Challenge 4
+// Write your code below. Good luck! 🙂
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for(let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    const total = tip + bills[i];
+    totals.push(total);
+}
+
+
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++){
+        sum += arr[i];
+        const average = sum/arr.length;
+    }
+    return average
+}
+
+const totalAverage = calcAverage(totals);
 */
 
 
