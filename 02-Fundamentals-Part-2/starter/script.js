@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 // Activating Strict Mode
@@ -12,7 +12,6 @@ if (hasDriversLicense) console.log('I can drive :D');
 // const interface = 'Audio';
 // const private = 543;
 */
-
 
 /*
 // Functions ****
@@ -38,7 +37,6 @@ console.log(fruitProcessor(5, 0));
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 */
-
 
 /*
 // Function Declarations vs. Expressions
@@ -414,6 +412,42 @@ while (dice !== 6) {
 }
 */
 
+/*
+// Assignments
+
+//Functions
+function describeCountry(country, population, capitalCity) {
+  const info = `${country} has ${population} million people and its capital city is ${capitalCity}`;
+  return info;
+}
+
+console.log(describeCountry("India", "1400", "Delhi"));
+console.log(describeCountry("China", "1300", "Beijing"));
+console.log(describeCountry("USA", "300", "Washington DC"));
+
+// Function Declarations vs. Expressions
+function percentageOfWorld1(population) {
+  const info = (population / 7900) * 100;
+  return info;
+}
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+console.log(percentageOfWorld1(1400));
+console.log(percentageOfWorld1(1300));
+console.log(percentageOfWorld1(300));
+
+// Arrow Functions
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+const info1 = percentageOfWorld3(1400);
+const info2 = percentageOfWorld3(1300);
+const info3 = percentageOfWorld3(300);
+
+console.log(info1, info2, info3);
+*/
 
 /*
 // Challenges
@@ -519,5 +553,3 @@ const calcAverage = function (arr) {
 
 const totalAverage = calcAverage(totals);
 */
-
-
