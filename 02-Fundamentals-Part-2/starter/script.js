@@ -438,7 +438,7 @@ const percentageOfWorld2 = function (population) {
 console.log(percentageOfWorld1(1400));
 console.log(percentageOfWorld1(1300));
 console.log(percentageOfWorld1(300));
-
+*/
 // Arrow Functions
 const percentageOfWorld3 = (population) => (population / 7900) * 100;
 
@@ -447,7 +447,31 @@ const info2 = percentageOfWorld3(1300);
 const info3 = percentageOfWorld3(300);
 
 console.log(info1, info2, info3);
-*/
+
+// Functions Calling Other Functions
+const describePopulation = function (country, population) {
+  const percentage = percentageOfWorld3(population);
+  const info = `${country} has ${population} million people, which is about ${percentage} of the world`;
+  return info;
+};
+
+console.log(describePopulation("China", 1400));
+console.log(describePopulation("India", 1300));
+console.log(describePopulation("USA", 300));
+
+// Introduction to Arrays
+const populations = [1400, 1300, 300, 3];
+
+console.log(length.population === 4);
+
+const percentageNew = [
+  percentageOfWorld3(populations[0]),
+  percentageOfWorld3(populations[1]),
+  percentageOfWorld3(populations[2]),
+  percentageOfWorld3(populations[3]),
+];
+
+console.log(percentageNew);
 
 /*
 // Challenges
@@ -539,8 +563,6 @@ for(let i = 0; i < bills.length; i++) {
     const total = tip + bills[i];
     totals.push(total);
 }
-
-
 
 const calcAverage = function (arr) {
     let sum = 0;
