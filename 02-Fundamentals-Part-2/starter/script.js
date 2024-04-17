@@ -438,7 +438,7 @@ const percentageOfWorld2 = function (population) {
 console.log(percentageOfWorld1(1400));
 console.log(percentageOfWorld1(1300));
 console.log(percentageOfWorld1(300));
-*/
+
 // Arrow Functions
 const percentageOfWorld3 = (population) => (population / 7900) * 100;
 
@@ -470,8 +470,33 @@ const percentageNew = [
   percentageOfWorld3(populations[2]),
   percentageOfWorld3(populations[3]),
 ];
-
 console.log(percentageNew);
+
+// Basic Array Operations (Methods)
+const neighbours = ["Nepal", "Bhutan", "China"];
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central european country :D");
+}
+
+neighbours[neighbours.indexOf("China")] = "Republic of China";
+console.log(neighbours);
+
+// Introduction to Objects
+const myCountry = {
+  country: "USA",
+  capital: "Washington DC",
+  language: "English US",
+  population: 300,
+  neighbours: ["Canada", "Mexico"],
+};
+*/
 
 /*
 // Challenges
