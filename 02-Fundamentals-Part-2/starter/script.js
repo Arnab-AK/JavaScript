@@ -496,6 +496,46 @@ const myCountry = {
   population: 300,
   neighbours: ["Canada", "Mexico"],
 };
+
+// Dot vs. Bracket Notation
+const myCountry = {
+  country: "USA",
+  capital: "Washington DC",
+  language: "English US",
+  population: 300,
+  neighbours: ["Canada", "Mexico"],
+};
+
+const info = `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`;
+console.log(info);
+
+myCountry.population += 100;
+console.log(myCountry);
+
+myCountry["population"] -= 100;
+console.log(myCountry);
+
+// Object Methods
+const myCountry = {
+  country: "USA",
+  capital: "Washington DC",
+  language: "English US",
+  population: 300,
+  neighbours: ["Canada", "Mexico"],
+
+  describe: function () {
+    return `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`;
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length === 0 ? true : false;
+    // this.isIsland = !Boolean(this.neighbours.length);
+  },
+};
+
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+
+console.log(myCountry);
 */
 
 /*
